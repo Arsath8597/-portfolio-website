@@ -16,6 +16,10 @@
     --line-height: 1.7rem;
     --transition: 0.3s;
   }
+
+  html{
+    scroll-behavior: smooth;
+  }
   body {
     font-family: var(--font-family);
     overflow-x: hidden;
