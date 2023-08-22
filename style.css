@@ -70,38 +70,13 @@ logo{
 .nav-links li a:hover{
    color: #212cad;
 }
-.fa-arrows-alt{
-    display: none;
+.fa-bars{
+  display: block;
+  cursor: pointer;
 }
+
 .fa-bars{
     display: none;
-}
-
-@media (max-width:700px) {
-  .nav-links{
-    display: block;
-    position: fixed;
-    background-color: var(--bg-color);
-    flex-direction: column;
-    top: 60px;
-    left: 0;
-    width: 80%;
-    text-align: center;
-    transform: translateX(120%);
-    transition: transform 0.5s ease-in;
-  }
-  .nav-links li{
-    padding: 20px 0;
-  }
-  .fa-bars{
-    display: block;
-    cursor: pointer;
-  }
-
-}
-
-.active{
-    left: -90%;
 }
 
 /* Skills section */
@@ -132,6 +107,8 @@ logo{
     margin: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   }
+
+
   /* Skills section ends */
 
   /* About section */
@@ -166,6 +143,7 @@ logo{
     grid-template-columns: repeat(2,1fr);
     margin: 0 20px;
     margin-bottom: 30px;
+    margin-right: -20px;
   }
   .projects  h1{
 margin-left: 35%;
@@ -205,5 +183,70 @@ margin-left: 35%;
     margin-left: 10%;
 }
 .projects img{
-    margin-left: 20%;
+    margin-left: 10%;
+}
+/* contact */
+
+.contact{
+  background-color: #707073;
+}
+.contact h1{
+  margin-left: 40%;
+}
+.contact .container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-left: 40px;
+  margin-top: 30px;
+ 
+}
+.contact .container1 ,.container2,.container3,.container4{
+  margin-bottom: 20px;
+  background-color: #ccceed;
+  padding: 30px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+/* media quary */
+
+@media (max-width:700px) {
+  .nav-links{
+    display: block;
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 60px;
+    left: 0;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    padding: 20px 0;
+  }
+  .fa-bars{
+    display: block;
+    cursor: pointer;
+  }
+  .contact .container{
+display: flex;
+flex-direction: column;
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 80%;
+  }  
+  .projects .container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 59px;
+  }
+
+}
+
+
+
+.active{
+    left: -90%;
 }
