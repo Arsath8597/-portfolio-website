@@ -147,7 +147,7 @@ logo{
     grid-template-columns: repeat(2,1fr);
     margin: 0 20px;
     margin-bottom: 30px;
-    margin-right: -20px;
+    margin-right: 20px;
   }
   .projects  h1{
 margin-left: 35%;
